@@ -7,15 +7,8 @@
 	<jsp:param value="Login" name="title" />
 </jsp:include>
 <div id="middle">
-	
-	<fieldset hidden="true" >
-		<legend>User Authentication Form</legend>
 		<form action="login.php" method="post">
 			<table>
-				<tr>
-					<td></td>
-					<td><c:if test="${error!=null}">${error}</c:if></td>
-				</tr>
 				<tr>
 					<td align="right"><b><t:field mandatory="yes"
 								text="Username"></t:field></b></td>
@@ -49,6 +42,5 @@
 				</tr>
 			</table>
 		</c:if>
-	</fieldset>
 </div>
 <%@ include file="footerlogin.jsp"%>

@@ -1,13 +1,6 @@
 <c:choose>
 	<c:when
-		test="${authenticatedUser !=null && authenticatedUser.profile eq 'PENDING'}">
-		<li><a
-			href="createemployee.php?page=createemployee&&user_role=adm"> <img
-				src="icons/add.png" /> Complete Your Profile
-		</a></li>
-	</c:when>
-	<c:when
-		test="${authenticatedUser !=null && authenticatedUser.profile eq 'CREATED'}">
+		test="${authenticatedUser !=null}">
 		<li><a
 			href="listinstructors.php?page=instructors&&user_role=empl&&action=list"><img
 						src="icons/application_view_list.png" /> Instructors</a>

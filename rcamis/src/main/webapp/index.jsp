@@ -7,7 +7,6 @@
 	<jsp:param value="Login" name="title" />
 </jsp:include>
 <div id="middle">
-	
 	<fieldset>
 		<legend>User Authentication Form</legend>
 		<form action="login.php" method="post">
