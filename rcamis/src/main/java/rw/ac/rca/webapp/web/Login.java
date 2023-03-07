@@ -1,6 +1,7 @@
 package rw.ac.rca.webapp.web;
 
 import java.io.IOException;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -14,7 +15,6 @@ import rw.ac.rca.webapp.dao.impl.UserDAOImpl;
 import rw.ac.rca.webapp.orm.User;
 import rw.ac.rca.webapp.util.UserRole;
 import rw.ac.rca.webapp.util.Util;
-import rw.ac.rca.webapp.web.Login;
 
 /**
  * Servlet implementation class Login
@@ -39,12 +39,6 @@ public class Login extends HttpServlet {
 			throws ServletException, IOException {
 		if (request.getParameter("logout") != null) {
 			request.getSession().invalidate();
-			/**
-			response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
-			response.setHeader("Pragma", "no-cache");
-			response.setHeader("Expires", "0");
-			System.out.println("Session ID after logout >>>>>>>>: " + request.getSession().getId());
-			*/
 			request.getRequestDispatcher("WEB-INF/login.jsp").forward(request, response);
 		} else {
 			String username = request.getParameter("username");

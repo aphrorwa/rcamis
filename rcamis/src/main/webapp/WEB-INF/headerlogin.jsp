@@ -15,7 +15,6 @@
 	<br />
 	<br />
 	<br />
-	<br />
 	<div id="layoutlogin">
 		<div id="bannerlogin">
 			<div class="text_header_login">SMIS</div>

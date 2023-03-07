@@ -4,7 +4,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib prefix="t" tagdir="/WEB-INF/tags"%>
 <jsp:include page="headerlogin.jsp">
-	<jsp:param value="Login" name="title" />
+	<jsp:param value="Login page" name="title" />
 </jsp:include>
 <div id="middle">
 		<form action="login.php" method="post">
